@@ -58,7 +58,40 @@ If it is not the case we can have some anomalies issues such as:
 
 ### Third Normal Form (3 NF)
 
+- Problematic called **transitive dependencies**:
+Player(**Player_ID**, PLayer_Rating, PLayer_Skill_Level)
+
+ {Player_ID} -> {PLayer_Skill_Level}
+ {Player_ID} -> {Player_Skill_Level} -> {Player_Rating}. We can see here a non key attribute depends on another non key attribute.
+ - Solution
+
+Player (**Player_ID**, Player_skill_level)
+Player_Skill_Levels(**Player_Skill_Level**, Player_Rating)
+
+**Every non key attribute in a table should depend on the key, the whole key, and nothing but the key.**
+ 
+ An even stronger version of it is **Boyce-Codd Normal Form**.
+
+ **Every attribute in a table should depend on the key, the whole key, and nothing but the key.**
+
+
+### Fourth Normal Form (4 NF)
+Usually it is not needed to go so far, as the database would be already super robust following the previous Normal forms.
+Multivalued dependencies problematic
+Model_Color_Style(**Model, Color, Style**)
+{Model} ->>{Color}
+{Model}->>{Style}
+
+**4 NF says that Multivalued dependencies in a table must be multivalued dependencies on the key.**
+Here we see that the dependencies are only on the model and not on the whole keys.
+
+- Solution
+Model_color(**Model, Color**)
+Model_Style(**Model,Stytle**)
 
 
 
+### Fifth Normal Form
+Rule:
+**It must not be possible to descrbie the table as being the logical result of joining other table together.**
 
