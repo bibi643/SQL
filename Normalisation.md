@@ -5,7 +5,7 @@
 
 
 ## Normalisations Check
-This check makes the database structure more robust to change and update, limiting 
+This check makes the database structure more robust to change and update, limiting issues after any database modification (Delecte, add,...)
 
 ### First Normal Form (1 NF)
 #### Violations type of 1 NF
