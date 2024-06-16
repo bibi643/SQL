@@ -11,6 +11,10 @@ To practice SQL on self created Fragrance Database
 
 # Overview
 To practice SQL, I create different csv files to produce a database for fragrances I smelt or used in the past.
+It has been used the main SQL Keywords, Operators, & Statements such as
+- [x] SELECT
+- [x] JOIN
+- [x] CREATE TABLE
 
 # Schema
 
