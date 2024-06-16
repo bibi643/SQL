@@ -13,9 +13,11 @@ WHERE Ratings >=18;
 
 
 
--- -- 
--- Returns the Fragrancies I may like based on the Top, MIddle, Base Note.--
 
+-- Returns the Fragrancies I may like based on the Top, MIddle, Base Note. This is not casesensitive--
+SELECT *
+FROM Fragrances
+where (Top_Note || Middle_Note|| Base_Note) like '%SandalWood%';
 
 
 
@@ -36,4 +38,12 @@ ON Designers.Designer_Name= Fragrances.Designer_ID
 WHERE Designer_ID IS NULL;
 
 
--- DISTINCT COUNT AVG DES RATINGS
+-- Sort the avg of ratings by designers.
+SELECT Designer_ID, AVG(Ratings) AS AVG_Ratings
+FROM Fragrances
+GROUP BY Designer_ID
+ORDER BY AVG_Ratings DESC;
+
+
+
+
