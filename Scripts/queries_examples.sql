@@ -46,4 +46,22 @@ ORDER BY AVG_Ratings DESC;
 
 
 
+-- Let's add Loewe in Designers Table
+
+INSERT INTO Designers VALUES('Loewe', 'Spanish');
+
+
+
+
+-- Add the count of fragrance We have in the fragracnes but in the designers. So we know how many fragrnaces we have tested for each designers.
+
+SELECT Designers.Designer_Name, COUNT(Fragrances.Designer_ID) as Fragrances_per_Designers
+FROM Designers
+LEFT JOIN Fragrances
+ON Designers.Designer_Name= Fragrances.Designer_ID
+GROUP BY Designer_Name
+;
+
+
+
 
