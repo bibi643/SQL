@@ -18,6 +18,7 @@ It has been used the main SQL Keywords, Operators, & Statements such as
 - [x] CREATE TABLE
 - [x] DISTINCT
 - [x] WHERE
+- [x] INSERT INTO
 - [x] Regular Expression patterns
 
 # Schema
@@ -40,4 +41,5 @@ The schema and SQL commands have been written and tested in DBeaver and DB Browz
 Finally it has been attempted to make a Database following the Normalisations Check (check Nomalisation.md), to make it robust to different scenarios, such as deleting, adding, modifying the database.
 
 
-
+# Queries examples
+In the folder Scripts, it can be found the command to create the Tables and different queries examples.
