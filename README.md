@@ -37,5 +37,7 @@ It has been created directly via csv files. It will be perform the same creation
 
 The schema and SQL commands have been written and tested in DBeaver and DB Browzer for sqlite.
 
-Finally it has been attempted to make a Database following the Normalisations Check, to make it robust to different scenarios, such as deleting, adding, modifying the database.
+Finally it has been attempted to make a Database following the Normalisations Check (check Nomalisation.md), to make it robust to different scenarios, such as deleting, adding, modifying the database.
+
+
 
